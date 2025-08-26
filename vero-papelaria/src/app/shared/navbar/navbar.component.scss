@@ -1,0 +1,143 @@
+.navbar-top-bar {
+  width: 100%;
+  height: 34px;
+  background: #C45454;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eeb8b1;
+  border-bottom: 1px solid #DE8888;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 0 32px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.options {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background-color: #F0B6AE;
+  z-index: -1;
+}
+
+.navbar__logo-area {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar__logo {
+  height: 80px;
+  width: auto;
+}
+
+.navbar__search-area {
+  display: flex;
+  align-items: center;
+  flex: 1 1 0;
+  max-width: 600px;
+  margin: 0 40px;
+  background: #fff;
+  border: 1px solid #b64646;
+  border-radius: 32px;
+  padding: 0 16px;
+  height: 48px;
+}
+
+.navbar__search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 18px;
+  color: #b64646;
+  background: transparent;
+  padding: 0 8px;
+  &::placeholder {
+    color: #b64646;
+    opacity: 1;
+  }
+  &::-webkit-input-placeholder {
+    color: #b64646;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: #b64646;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: #b64646;
+    opacity: 1;
+  }
+  &::-ms-input-placeholder {
+    color: #b64646;
+    opacity: 1;
+  }
+}
+
+.navbar__search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.navbar__search-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b64646;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.navbar__action img {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 4px;
+}
+
+.navbar__action:hover {
+  color: #7a2d2d;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+    min-height: unset;
+  }
+  .navbar__search-area {
+    margin: 16px 0;
+    max-width: 100%;
+  }
+  .navbar__actions {
+    gap: 20px;
+  }
+}
