@@ -1,0 +1,44 @@
+
+.categories-bar {
+  width: 100%;
+  background: #eeb8b1;
+  display: flex;
+  justify-content: center;
+}
+
+.categories-bar__list {
+  display: flex;
+  gap: 106px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.categories-bar__item {
+  color: #C45454;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 16px 0;
+  cursor: pointer;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.categories-bar__item:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background: #e1a39a;
+  margin-left: 56px;
+  position: absolute;
+  right: -28px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.categories-bar__item:hover {
+  color: #b64646;
+}
